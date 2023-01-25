@@ -10,7 +10,8 @@ class RecursionMathTest {
     @Test
     public void testMultiplication() {
         assertEquals(12, RecursionMath.recursiveMultiplication(3, 4));
-        
+        assertEquals(81, RecursionMath.recursiveMultiplication(9, 9));
+
         // Add more JUnit tests like the one above to test your method
         
     }
@@ -18,12 +19,19 @@ class RecursionMathTest {
     @Test
     public void testDivision() {
         // Add JUnit tests to test your method
-        fail("Write some tests!");
+        assertEquals(1, RecursionMath.recursiveDivision(12, 2));
+        assertEquals(2, RecursionMath.recursiveDivision(24, 12));
+
     }
 
     @Test 
     public void testPower() {
         // Add JUnit tests to test your method
-        fail("Write some tests!");
+        assertEquals(8, RecursionMath.recursiveDivision(2, 3));
+
+    	
+    	
+    	
     }
+    
 }
