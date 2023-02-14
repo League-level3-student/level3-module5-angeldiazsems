@@ -19,10 +19,8 @@ public class StringTrimmer {
             	System.out.println("before: "+str);            	
             	str = bob.replace(str.length()-1, str.length(), "").toString();
             	System.out.println("after: "+str);
-            	removesLeft--;
             	System.out.println("RE"+removesLeft);
-            	trimString(str, removesLeft);
+            	return trimString(str, removesLeft--);
             }
-            return str;
     }
 }
